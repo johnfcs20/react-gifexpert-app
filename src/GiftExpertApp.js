@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { AddCategory } from "./components/AddCategory";
 import { GifGrid } from "./components/GifGrid";
 
-export const GiftExpertApp = () => {
+export const GiftExpertApp = ({defaultCategory = []}) => {
 
-     const [categories, setCategories] =  useState (['One Punch']);
+     const [categories, setCategories] =  useState (defaultCategory);
      
     return (
         <>
